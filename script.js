@@ -26,7 +26,8 @@ function createNames() {
     
 
     
-    //let randomItem = getRandomItem(textList);
+    let randomItem = getRandomItem(textList);
+    console.log(randomItem);
 
 
 
