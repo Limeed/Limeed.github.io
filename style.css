@@ -1,0 +1,33 @@
+body {
+    background:linear-gradient(rgb(128, 128, 128),rgb(61, 61, 61));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    text-align: center;
+    display:block;
+
+    color: white;
+    font-family: "Comfortaa";
+}
+
+
+
+
+/*HOME PAGE*/
+
+.mainheader {
+    text-align: center;
+    font-size: 8vw;
+}
+
+#playbutton {
+    color: white;
+    background-color: rgb(49, 49, 49);
+
+    margin-top:25%;
+    width: 25vw; /* Width relative to viewport width */
+    height: 5vh; /* Height relative to viewport height */
+    font-size: 2vw;
+    border-radius: 10px;
+}
+
