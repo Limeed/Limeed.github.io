@@ -1,4 +1,3 @@
-
 function siteLoaded() {
     createHomePage();
 }
@@ -90,7 +89,13 @@ function goToGamePage() {
         return returnedItem;
     }
 
-    // Initialize with players from the cookie
+
+    if (!getCookie('players')) {
+        // If the cookie does not exist, set it
+        setCookie('players', '', 365); // Set the cookie to expire in 365 days
+        console.log("Cookie set for the first-time visitor.");
+    }
+
     let playersBefore = getCookie('players').split(',');
     for (let i = 0; i < playersBefore.length; i++) {
         if (playersBefore[i].trim()) { // Ensure no empty values
