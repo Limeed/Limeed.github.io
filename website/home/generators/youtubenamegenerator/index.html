@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Random YT Title Gener2ator</title>
+    <link rel="icon" type="image/jpg" href="favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <script src="ytscript.js"></script>
+</head>
+
+
+<body class="body">
+    
+
+    <select id="videogenre">
+        <option value="vlog">Vlogs</option>
+        <option value="gaming">Gaming</option>
+        <option value="prank">Pranks</option>
+        <option value="techreview">Tech Reviews</option>
+        <option value="cooking">Cooking</option>
+        <option value="educational">Educational</option>
+    </select>
+
+
+    <input type="button" class="homebutton" onclick='window.location.href = "../../index.html"' value="Home">
+    <input type="number" id="amountofnames" class="amountofnamesinput" placeholder="Enter how many names">
+    <label class="keeppreviousnamestitle">Keep Previous Names</label><input type="checkbox" id="keeppreviousnames" class="keeppreviousnames">
+
+
+    <button class="make-names" onclick="createNames()">Generate Names</button>
+    <button class="reset-names" onclick="resetNames()">Reset Names</button>
+    <div id="list-container"></div>
+
+    
+
+</body>
+
+
+
+
+
+</html>
